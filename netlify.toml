@@ -1,0 +1,16 @@
+# to be able to build this site locally, let's specify
+# build settings in this file
+[build]
+  command = "npm run build"
+  publish = "public"
+# Cypress plugin
+[[plugins]]
+  package = "netlify-plugin-cypress"
+  [plugins.inputs]
+    record = true
+    group = 'built'
+  [plugins.inputs.onSuccess]
+    # run E2E tests against the deployed URL
+    enable = true
+    record = true
+    group = 'deployed'
