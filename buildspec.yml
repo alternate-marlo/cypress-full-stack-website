@@ -12,6 +12,6 @@ phases:
   post_build:
     commands:
       - aws s3 cp --recursive ./public "s3://xp-cypress-demo-prd/"
-# artifacts:
-#   files:
-#     - public/*
+artifacts:
+  files:
+    - '**/*'
