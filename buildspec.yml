@@ -13,5 +13,7 @@ phases:
   #   commands:
   #     - aws s3 cp --recursive ./public "s3://xp-cypress-demo-prd/"
 artifacts:
+  base-directory: public
+  discard-paths: yes
   files:
-    - 'public/*'
+    - '**/*'
