@@ -10,6 +10,9 @@ phases:
       - yarn
       - echo Build started on `date`
       - yarn build
+artifacts:
+  files:
+    - public/*
   # post_build:
   #   commands:
   #     - aws s3 cp --recursive ./public "s3://$DEST_BUCKET/"
