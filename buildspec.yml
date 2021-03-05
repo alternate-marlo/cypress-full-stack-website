@@ -9,6 +9,9 @@ phases:
       - npm install -g yarn
       - yarn
       - yarn build
+artifacts:
+  files:
+    - public/*
   # post_build:
   #   commands:
   #     - aws s3 cp --recursive ./public "s3://$DEST_BUCKET/"
