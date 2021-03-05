@@ -14,4 +14,4 @@ phases:
   #     - aws s3 cp --recursive ./public "s3://xp-cypress-demo-prd/"
 artifacts:
   files:
-    - '**/*'
+    - 'public/*'
