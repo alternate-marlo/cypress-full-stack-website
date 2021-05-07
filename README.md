@@ -1,6 +1,3 @@
 # netlify-plugin-cypress-example extended
 
-### Some extra info here
-
-
-
+### Some extra info here!
